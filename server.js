@@ -54,6 +54,10 @@ mongoose.connect(connection_url, {
 })
 
 // API Endpoints
+app.get('/', (req,res) => {
+    res.status(200).send("Hello World")
+})
+
 app.get('/test', (req,res) => {
     res.status(200).json({
         message: "Got passed the test!",
