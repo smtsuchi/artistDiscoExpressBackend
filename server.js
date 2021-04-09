@@ -36,7 +36,7 @@ let stateKey = 'spotify_auth_state';
 
 // App Config
 const app = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 // Middlewares
 app.use(express.static(__dirname + '/public'))
@@ -54,6 +54,12 @@ mongoose.connect(connection_url, {
 })
 
 // API Endpoints
+app.get('/test', (req,res) => {
+    res.status(200).json({
+        message: "Got passed the test!",
+        test: {test1, test2}
+    })
+})
 
 // Create/Get User Data
 app.post('/userData', (req, res, next) => {
