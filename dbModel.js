@@ -22,6 +22,7 @@ const userSchema = mongoose.Schema({
     access_token: String,
     category_data: [categorySchema],
     category_names: [String],
+    my_playlist: String,
     settings: {
         fav_on_like: Boolean,
         follow_on_like: Boolean,
