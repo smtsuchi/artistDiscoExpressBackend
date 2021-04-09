@@ -61,7 +61,7 @@ app.get('/', (req,res) => {
 app.get('/test', (req,res) => {
     res.status(200).json({
         message: "Got passed the test!",
-        test: {test1, test2}
+        test: {"test1": "test2"}
     })
 })
 
