@@ -19,21 +19,21 @@ The REST API to the example app is described below.
 
 ### List of Endpoints
 #### User
-`POST /userData`
-`GET /userData/<user_id>`
-`GET /userData/settings/<user_id>`
+`POST /userData`<br>
+`GET /userData/<user_id>`<br>
+`GET /userData/settings/<user_id>`<br>
 #### Categories
-`POST /category/<user_id>`
-`GET /category/<user_id>/<category_name>`
-`GET /category/single/<user_id>/<category_name>`
-`POST /patch-category/<user_id>/<category_name>`
-`POST /patch-category-liked/<user_id>/<category_name>`
-`POST /patch-category-leave-screen/<user_id>/<category_name>`
+`POST /category/<user_id>`<br>
+`GET /category/<user_id>/<category_name>`<br>
+`GET /category/single/<user_id>/<category_name>`<br>
+`POST /patch-category/<user_id>/<category_name>`<br>
+`POST /patch-category-liked/<user_id>/<category_name>`<br>
+`POST /patch-category-leave-screen/<user_id>/<category_name>`<br>
 
 #### Settings
-`POST /atp/<user_id>`
-`POST /fav/<user_id>`
-`POST /follow/<user_id>`
+`POST /atp/<user_id>`<br>
+`POST /fav/<user_id>`<br>
+`POST /follow/<user_id>`<br>
 
 
 [//]: # (Thanks for following along! Shoha, out--)
