@@ -151,6 +151,15 @@ const options = {
                             items: { type: 'string' }
                         },
                         popularity: { type: 'number' },
+                        followers: {
+                            type: 'object',
+                            properties: {
+                                total: {
+                                    type: 'number',
+                                    description: 'Total number of followers'
+                                }
+                            }
+                        },
                         images: {
                             type: 'array',
                             items: {

@@ -11,6 +11,9 @@ const artistSchema = new mongoose.Schema({
     name: String,
     genres: [String],
     popularity: Number,
+    followers: {
+        total: Number
+    },
     images: [{ url: String, height: Number, width: Number }],
     external_urls: { spotify: String }
 }, { _id: false });
