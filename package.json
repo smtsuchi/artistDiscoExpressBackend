@@ -1,29 +1,47 @@
 {
   "name": "artist-disco-express-backend",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Backend for Artist Disco React app using Express",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"**/*.{js,json,md}\"",
+    "test": "jest --coverage --verbose",
+    "test:watch": "jest --watch",
+    "test:unit": "jest --testPathPattern=unit",
+    "test:integration": "jest --testPathPattern=integration"
   },
   "author": "Shoha Tsuchida",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "concurrently": "^6.0.0",
-    "cookie-parser": "^1.4.5",
+    "axios": "^1.7.9",
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.12.2",
-    "querystring": "^0.2.1",
-    "request": "^2.88.2"
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^8.0.0",
+    "joi": "^17.13.3",
+    "mongoose": "^8.9.3",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "winston": "^3.17.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "@shelf/jest-mongodb": "^4.3.2",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^10.1.2",
+    "nodemon": "^3.1.11",
+    "prettier": "^3.4.2",
+    "supertest": "^7.0.0"
   },
   "engines": {
-    "node": "14.16.0"
+    "node": ">=20.0.0"
   }
 }
